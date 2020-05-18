@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/team-shirts/static/css/main.fff8ae6d.chunk.css",
+    "main.css": "/team-shirts/static/css/main.4b8dbc81.chunk.css",
     "main.js": "/team-shirts/static/js/main.797786b8.chunk.js",
     "main.js.map": "/team-shirts/static/js/main.797786b8.chunk.js.map",
     "runtime-main.js": "/team-shirts/static/js/runtime-main.d94da8fe.js",
@@ -8,15 +8,15 @@
     "static/js/2.7cc5d21a.chunk.js": "/team-shirts/static/js/2.7cc5d21a.chunk.js",
     "static/js/2.7cc5d21a.chunk.js.map": "/team-shirts/static/js/2.7cc5d21a.chunk.js.map",
     "index.html": "/team-shirts/index.html",
-    "precache-manifest.557dacbccafccd560be182439a131bef.js": "/team-shirts/precache-manifest.557dacbccafccd560be182439a131bef.js",
+    "precache-manifest.a38c46591e8f1f3db8cf6f433d87db33.js": "/team-shirts/precache-manifest.a38c46591e8f1f3db8cf6f433d87db33.js",
     "service-worker.js": "/team-shirts/service-worker.js",
-    "static/css/main.fff8ae6d.chunk.css.map": "/team-shirts/static/css/main.fff8ae6d.chunk.css.map",
+    "static/css/main.4b8dbc81.chunk.css.map": "/team-shirts/static/css/main.4b8dbc81.chunk.css.map",
     "static/js/2.7cc5d21a.chunk.js.LICENSE.txt": "/team-shirts/static/js/2.7cc5d21a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d94da8fe.js",
     "static/js/2.7cc5d21a.chunk.js",
-    "static/css/main.fff8ae6d.chunk.css",
+    "static/css/main.4b8dbc81.chunk.css",
     "static/js/main.797786b8.chunk.js"
   ]
 }
