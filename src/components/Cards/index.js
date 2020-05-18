@@ -4,8 +4,6 @@ import './Cards.scss';
 import listTeams from './listTeams';
 const list = listTeams
 
-console.log(list)
-
 export default class Cards extends Component {
     constructor(props) {
       super(props)

@@ -21,17 +21,22 @@ $shdow-gray: #d3d3d5;
         font-family: "Poppins", sans-serif;
         position: absolute;
         bottom: 0;
-        right: 80px;
-        font-size: 60px;
+        left: 10px;
+        font-size: 30px;
         font-weight: 700;
         color: #fff;
         margin: 10px 0;
         display: block;
-        width: 15ch;
+        width: calc(100% - 90px);
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         pointer-events:none;
+        text-shadow: rgba(0, 0, 0, 0.2) 1px 0px 15px;
+
+        @media (min-width: 600px) {
+            font-size: 60px;
+        }
     }
     
     &__trigger {
@@ -49,7 +54,7 @@ $shdow-gray: #d3d3d5;
         i {
             font-size: 40px;
         }
-
+        
         &:focus {
             outline: 0;
         }
@@ -78,10 +83,14 @@ $shdow-gray: #d3d3d5;
         width: calc(100% - 80px);
         height: 200px;
         // background-image: url($img-url);
-        background-size: 100% ;
+        background-size: cover;
         filter: grayscale(100%);
         background-position: center;
         box-shadow: #000 -10px 0 100px inset;
+        
+        @media (min-width: 600px) {
+            background-size: 100% ;
+        }
     }
     
     &__social {
@@ -94,6 +103,7 @@ $shdow-gray: #d3d3d5;
         width: 180px;
         height: 64px;
         border-radius: 80px;
+        z-index: 1;
         
         a {
             opacity: 0;
@@ -152,25 +162,29 @@ $shdow-gray: #d3d3d5;
     
     &:hover {
         .card__button {
-            transform: scale(16.5);
+            transform: scale(13);
+            
+            @media (min-width: 600px) {
+                transform: scale(16.5);
+            }
         }
         .card__material {
             color: #fff;
         }
-    
+        
         .card__material-logo {
             filter: invert(1);
         }
-    
+        
         .card__pic {
             filter: grayscale(50%);
         }
-
+        
         .card__trigger {
             transform: scale(1);
             opacity: 1
         }
-
+        
         .card__social a {
             transform: scale(1);
             opacity: 1;
