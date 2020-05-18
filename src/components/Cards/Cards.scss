@@ -1,4 +1,3 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js');
 
 $bg-color: #E6E5E1;
 $shdow-gray: #d3d3d5;
@@ -10,7 +9,7 @@ $shdow-gray: #d3d3d5;
 }
 .card {
     position: relative;
-    width: 600px;
+    width: 100%;
     background-color: #fff;
     overflow: hidden;
     margin: 10px 10px 10px;
@@ -35,6 +34,9 @@ $shdow-gray: #d3d3d5;
         text-shadow: rgba(0, 0, 0, 0.2) 1px 0px 15px;
 
         @media (min-width: 600px) {
+            font-size: 50px;
+        }
+        @media (min-width: 992px) {
             font-size: 60px;
         }
     }
@@ -42,8 +44,8 @@ $shdow-gray: #d3d3d5;
     &__trigger {
         z-index: 100;
         position: absolute;
-        right: 20px;
-        bottom: 25px;
+        right: 15px;
+        bottom: 20px;
         cursor: pointer;
         border: 0;
         background: transparent;
@@ -52,7 +54,11 @@ $shdow-gray: #d3d3d5;
         transition: all 0.2s ease;
         color: #fff;
         i {
-            font-size: 40px;
+            font-size: 30px;
+            
+            @media (min-width: 600px) {
+                font-size: 40px;
+            }
         }
         
         &:focus {
@@ -84,12 +90,12 @@ $shdow-gray: #d3d3d5;
         height: 200px;
         // background-image: url($img-url);
         background-size: cover;
-        filter: grayscale(100%);
         background-position: center;
         box-shadow: #000 -10px 0 100px inset;
         
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
             background-size: 100% ;
+            filter: grayscale(100%);
         }
     }
     
@@ -189,5 +195,9 @@ $shdow-gray: #d3d3d5;
             transform: scale(1);
             opacity: 1;
         }
+    }
+
+    @media (min-width: 992px) {
+        width: calc(50% - 30px);
     }
 }

@@ -4,7 +4,8 @@ export default [
         abv: 'Flu',
         material: [{
             name: 'Umbro',
-            logo: 'https://i.pinimg.com/originals/5f/04/0e/5f040e809b7ab60c71f5ea24d0b5687c.png'
+            logo: 'https://i.pinimg.com/originals/5f/04/0e/5f040e809b7ab60c71f5ea24d0b5687c.png',
+            site: 'https://www.umbro.com.br/fluminense'
         }],
         site: 'https://www.fluminense.com.br',
         color: 'rgb(86, 19, 19)',
@@ -27,7 +28,8 @@ export default [
         abv: 'Fla',
         material: [{
             name: 'Adidas',
-            logo: 'https://logospng.org/download/adidas/logo-adidas-256.png'
+            logo: 'https://logospng.org/download/adidas/logo-adidas-256.png',
+            site: 'https://www.adidas.com.br/flamengo'
         }],
         site: 'https://www.flamengo.com.br',
         color: 'red',
@@ -49,7 +51,8 @@ export default [
         abv: 'Vas',
         material: [{
             name: 'Diadora',
-            logo: 'https://tribes-store.it/media/aw_shopbybrand/image/d/i/diadora.png'
+            logo: 'https://tribes-store.it/media/aw_shopbybrand/image/d/i/diadora.png',
+            site: '/'
         }],
         site: 'https://www.vasco.com.br',
         color: '#000',
@@ -71,7 +74,8 @@ export default [
         abv: 'Bot',
         material: [{
             name: 'Kappa',
-            logo: 'https://www.botafogo.com.br/images/partners/kappa_logo2019.png'
+            logo: 'https://www.botafogo.com.br/images/partners/kappa_logo2019.png',
+            site: '/'
         }],
         site: 'https://www.botafogo.com.br/',
         color: '#000',
