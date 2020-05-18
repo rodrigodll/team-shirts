@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/team-shirts/static/css/main.4729713a.chunk.css",
+    "main.js": "/team-shirts/static/js/main.00f50062.chunk.js",
+    "main.js.map": "/team-shirts/static/js/main.00f50062.chunk.js.map",
+    "runtime-main.js": "/team-shirts/static/js/runtime-main.d94da8fe.js",
+    "runtime-main.js.map": "/team-shirts/static/js/runtime-main.d94da8fe.js.map",
+    "static/js/2.7cc5d21a.chunk.js": "/team-shirts/static/js/2.7cc5d21a.chunk.js",
+    "static/js/2.7cc5d21a.chunk.js.map": "/team-shirts/static/js/2.7cc5d21a.chunk.js.map",
+    "index.html": "/team-shirts/index.html",
+    "precache-manifest.55e7f4c9b1255310839d5dee8b72b0a1.js": "/team-shirts/precache-manifest.55e7f4c9b1255310839d5dee8b72b0a1.js",
+    "service-worker.js": "/team-shirts/service-worker.js",
+    "static/css/main.4729713a.chunk.css.map": "/team-shirts/static/css/main.4729713a.chunk.css.map",
+    "static/js/2.7cc5d21a.chunk.js.LICENSE.txt": "/team-shirts/static/js/2.7cc5d21a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d94da8fe.js",
+    "static/js/2.7cc5d21a.chunk.js",
+    "static/css/main.4729713a.chunk.css",
+    "static/js/main.00f50062.chunk.js"
+  ]
+}
