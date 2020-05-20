@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/team-shirts/static/css/main.606b9d4d.chunk.css",
-    "main.js": "/team-shirts/static/js/main.2874deb4.chunk.js",
-    "main.js.map": "/team-shirts/static/js/main.2874deb4.chunk.js.map",
+    "main.css": "/team-shirts/static/css/main.2890f06a.chunk.css",
+    "main.js": "/team-shirts/static/js/main.b1b754d9.chunk.js",
+    "main.js.map": "/team-shirts/static/js/main.b1b754d9.chunk.js.map",
     "runtime-main.js": "/team-shirts/static/js/runtime-main.d94da8fe.js",
     "runtime-main.js.map": "/team-shirts/static/js/runtime-main.d94da8fe.js.map",
     "static/js/2.45c9283a.chunk.js": "/team-shirts/static/js/2.45c9283a.chunk.js",
     "static/js/2.45c9283a.chunk.js.map": "/team-shirts/static/js/2.45c9283a.chunk.js.map",
     "index.html": "/team-shirts/index.html",
-    "precache-manifest.641b6c3e00aff980ce779abf3926466b.js": "/team-shirts/precache-manifest.641b6c3e00aff980ce779abf3926466b.js",
+    "precache-manifest.da6ceb00129e634e967f7795a6e3f9d5.js": "/team-shirts/precache-manifest.da6ceb00129e634e967f7795a6e3f9d5.js",
     "service-worker.js": "/team-shirts/service-worker.js",
-    "static/css/main.606b9d4d.chunk.css.map": "/team-shirts/static/css/main.606b9d4d.chunk.css.map",
+    "static/css/main.2890f06a.chunk.css.map": "/team-shirts/static/css/main.2890f06a.chunk.css.map",
     "static/js/2.45c9283a.chunk.js.LICENSE.txt": "/team-shirts/static/js/2.45c9283a.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/team-shirts/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d94da8fe.js",
     "static/js/2.45c9283a.chunk.js",
-    "static/css/main.606b9d4d.chunk.css",
-    "static/js/main.2874deb4.chunk.js"
+    "static/css/main.2890f06a.chunk.css",
+    "static/js/main.b1b754d9.chunk.js"
   ]
 }
