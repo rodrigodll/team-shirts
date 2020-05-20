@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 // components
 import Header from "./components/Header";
@@ -7,20 +7,26 @@ import Cards from "./components/Cards"
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Header/>
-      </header>
+class App extends Component {
+  
+  render() {
 
-      <div className="content">
-        <Cards />
+    return (
+      <div className="App">
+        <div className="container">
+          <header className="App-header">
+            <Header/>
+          </header>
+    
+          <div className="content">
+            <Cards data={this.props.data} />
+          </div>
+    
+          <Footer />
+        </div>
       </div>
-
-      <Footer />
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

@@ -1,5 +1,6 @@
 export default [
     {
+        id: 1,
         shortName: 'Fluminense',
         abv: 'Flu',
         material: [{
@@ -24,6 +25,7 @@ export default [
         image: 'https://www.tupi.fm/wp-content/uploads/camisa-flu-1.jpg'
     },
     {
+        id: 2,
         shortName: 'Flamengo',
         abv: 'Fla',
         material: [{
@@ -47,6 +49,7 @@ export default [
         image: 'https://colunadofla.com/wp-content/uploads/2016/08/flamengo-uniforme.png'
     },
     {
+        id: 3,
         shortName: 'Vasco da Gama',
         abv: 'Vas',
         material: [{
@@ -70,6 +73,7 @@ export default [
         image: 'https://www.lance.com.br/files/article_main/uploads/2019/08/20/5d5c53a72fe3f.jpeg'
     },
     {
+        id: 4,
         shortName: 'Botafogo',
         abv: 'Bot',
         material: [{

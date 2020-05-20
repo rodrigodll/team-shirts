@@ -1,36 +1,17 @@
 import React, { Component } from "react";
 import './Cards.scss';
 
-import listTeams from './listTeams';
-const list = listTeams
-
-export default class Cards extends Component {
-    constructor(props) {
-      super(props)
-
-      // Define valores iniciais
-      this.state = {
-        name: '',
-        data: list,
-        detail: ''
-      }
-      this.viewDetails = this.viewDetails.bind(this)
-    }
-
-    viewDetails(item) {
-      setTimeout(() => {
-        console.log(this.state.detail)
-        alert(`Mostrar detalhe da camisa de ${this.state.detail.shortName}`)
-      }, 500);
-
-    }
+class Cards extends Component {
 
     render() {
-      const renderCard = this.state.data.map(item => {
+      const { data } = this.props
+
+      const renderCard = data.map(item => {
         return(
-          <div className="card" key={item.abv}>
+          <div className="card" key={item.id}>
             <h2 className="card__name">{item.shortName}</h2>
-            <button className="card__trigger" onClick={() => {this.setState({detail: item}); this.viewDetails()}}>
+            {/* <button className="card__trigger" onClick={() => {this.setState({detail: item}); this.viewDetails()}}> */}
+            <button className="card__trigger">
               <i className="fas fa-arrow-right"></i>
             </button>
             <p className="card__material">{item.material[0].name}</p>
@@ -79,3 +60,5 @@ export default class Cards extends Component {
       )
     }
 }
+
+export default Cards;
