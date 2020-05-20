@@ -4,7 +4,7 @@ import './Cards.scss';
 // propriedas passadas ao component
 // data: arquivo base de informações
 // filterText: Parâmetro criado em App.js para uso em Search.js
-export default ({ data, filterText }) => {
+export default ({ data, filterText, selectTeam }) => {
 
   const renderCard = data
   .filter(item => {
@@ -17,8 +17,8 @@ export default ({ data, filterText }) => {
     return(
       <div className="card" key={item.id}>
         <h2 className="card__name">{item.shortName}</h2>
-        {/* <button className="card__trigger" onClick={() => {this.setState({detail: item}); this.viewDetails()}}> */}
-        <button className="card__trigger">
+        <button className="card__trigger" onClick={() => selectTeam(item.id)}>
+        {/* <button className="card__trigger"> */}
           <i className="fas fa-arrow-right"></i>
         </button>
         <p className="card__material">{item.material[0].name}</p>
@@ -45,10 +45,10 @@ export default ({ data, filterText }) => {
         <button
           className="card__button" 
           style={
-            (item.color === "#000") ? {
+            (item.colors[0].primary === "#000") ? {
               opacity: "0.8",
-              backgroundColor: item.color
-            } : { backgroundColor: item.color }
+              backgroundColor: item.colors[0].primary
+            } : { backgroundColor: item.colors[0].primary }
             }
           >
         </button>
