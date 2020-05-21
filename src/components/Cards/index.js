@@ -9,14 +9,14 @@ export default ({ data, filterText, selectTeam }) => {
   const renderCard = data
   .filter(item => {
     // filtro na página com base no valor da busca
-    // item.ShortName: Fluminense | filterText: Fluminense 
-    return item.shortName.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
+    // item.name: Fluminense | filterText: Fluminense 
+    return item.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
   })
   .map(item => {
     // Renderiza os cards na tela
     return(
       <div className="card" key={item.id}>
-        <h2 className="card__name">{item.shortName}</h2>
+        <h2 className="card__name">{item.name}</h2>
         <button className="card__trigger" onClick={() => selectTeam(item.id)}>
         {/* <button className="card__trigger"> */}
           <i className="fas fa-arrow-right"></i>

@@ -44,15 +44,29 @@ $shdow-gray: #d3d3d5;
     &__trigger {
         z-index: 100;
         position: absolute;
-        right: 15px;
-        bottom: 20px;
         cursor: pointer;
         border: 0;
         background: transparent;
-        transform: scale(0.1);
-        opacity: 0;
         transition: all 0.2s ease;
         color: #fff;
+
+
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        text-align: right;
+        padding-right: 25px;
+        z-index: 99;
+        transform: scale(1);
+        opacity: 1;
+        @media (min-width: 992px) {
+            transform: scale(0.1);
+            opacity: 0;
+            right: 15px;
+            bottom: 20px;
+            height: auto;
+        }
         i {
             font-size: 30px;
             
@@ -166,34 +180,36 @@ $shdow-gray: #d3d3d5;
         }
     }
     
-    &:hover {
-        .card__button {
-            transform: scale(13);
-            
-            @media (min-width: 600px) {
-                transform: scale(16.5);
+    @media (min-width: 992px) {
+        &:hover {
+            .card__button {
+                transform: scale(13);
+                
+                @media (min-width: 600px) {
+                    transform: scale(16.5);
+                }
             }
-        }
-        .card__material {
-            color: #fff;
-        }
-        
-        .card__material-logo {
-            filter: invert(1);
-        }
-        
-        .card__pic {
-            filter: grayscale(50%);
-        }
-        
-        .card__trigger {
-            transform: scale(1);
-            opacity: 1
-        }
-        
-        .card__social a {
-            transform: scale(1);
-            opacity: 1;
+            .card__material {
+                color: #fff;
+            }
+            
+            .card__material-logo {
+                filter: invert(1);
+            }
+            
+            .card__pic {
+                filter: grayscale(50%);
+            }
+            
+            .card__trigger {
+                transform: scale(1);
+                opacity: 1
+            }
+            
+            .card__social a {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
     }
 

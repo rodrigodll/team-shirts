@@ -14,7 +14,7 @@ class App extends Component {
     super(props)
     this.state = {
       filterText: '',
-      teamSelected: [0]
+      teamSelected: ''
     }
   }
 
@@ -52,6 +52,7 @@ class App extends Component {
             />
 
             <Details 
+              selectTeam={this.selectTeam.bind(this)}
               teamSelected={this.state.teamSelected}
               data={this.props.data}
             />

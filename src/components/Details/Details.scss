@@ -1,3 +1,26 @@
+// .appTest {
+//     position: fixed;
+// top: 0;
+// left: 0;
+// width: 100%;
+// z-index: 99;
+// height: 100vh;
+// }
+#limpar {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    border: 0;
+    padding: 0;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: #000;
+}
+
 .details {
     background: #fff;
     color: #000;
@@ -5,5 +28,111 @@
     left: 0;
     z-index: 99;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 0;
+    
+    @media (min-width: 992px) {
+        border-radius: 20px;
+        overflow: hidden;
+        height: auto;
+    }
+
+    &__brands {
+        margin-left: 0;
+        @media (min-width: 992px) {
+            margin-left: -15px;
+        }
+    }
+    &__infos {
+        margin-top: 50px;
+        @media (min-width: 992px) {
+            margin-top: 0;
+        }
+    }
+    &__calltoaction {
+        margin-bottom: 40px;
+    }
+    &__shirts {
+        margin-bottom: 40px;
+    }
+}
+
+.shirts-list {
+    &__box {
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 4px 25px -10px;
+        border-radius: 10px;
+        margin: 0 40px 0 0;
+        display: block;
+        position: relative;
+        transition: all 100ms ease-in-out;
+        cursor: pointer;
+        
+        &.active {
+            box-shadow: rgba(0, 0, 0, 0.4) 0 4px 35px -10px;
+            .shirts-list__image {
+                transform: scale(1) translateY(-20px);
+            }
+        }
+        @media (min-width: 992px) {
+            &:hover {
+                .shirts-list__image {
+                    transform: scale(1) translateY(-10px);
+                }
+            }
+        }
+    }
+    &__image {
+        transform: scale(0.9);
+        transition: all 100ms ease-in-out;
+    }
+}
+
+.principal-shirt {
+    margin: 0 -15px;
+
+    &__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        mix-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        
+        &.opacity {
+            mix-blend-mode: inherit;
+            opacity: 0.4;
+        }
+    }
+    &__image {
+        transform: translate(0, 20%);
+        width: 370px;
+        z-index: 1;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        @media (min-width: 992px) {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+            width: 430px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        width: calc(100% + 15px);
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.datail-logos {
+    position: absolute;
+    z-index: 1;
 }
