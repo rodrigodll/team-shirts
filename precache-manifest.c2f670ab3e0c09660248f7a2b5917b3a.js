@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bfd6125f0665f08472930f4a7102af69",
+    "revision": "8e54f4cf27c488287473add1bde169ed",
     "url": "/team-shirts/index.html"
   },
   {
-    "revision": "f8641ace176e2c5ae28f",
-    "url": "/team-shirts/static/css/main.18ed8ee4.chunk.css"
+    "revision": "e0ff7c7eadc5e4299b4e",
+    "url": "/team-shirts/static/css/main.1f8eec3f.chunk.css"
   },
   {
     "revision": "6434ea10dccb4578f78b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/team-shirts/static/js/2.45c9283a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8641ace176e2c5ae28f",
-    "url": "/team-shirts/static/js/main.85050dff.chunk.js"
+    "revision": "e0ff7c7eadc5e4299b4e",
+    "url": "/team-shirts/static/js/main.60155713.chunk.js"
   },
   {
     "revision": "3547da2bf1f8a173343e",
