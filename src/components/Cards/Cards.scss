@@ -31,13 +31,10 @@ $shdow-gray: #d3d3d5;
         white-space: nowrap;
         text-overflow: ellipsis;
         pointer-events:none;
-        text-shadow: rgba(0, 0, 0, 0.2) 1px 0px 15px;
+        text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;
 
-        @media (min-width: 600px) {
-            font-size: 50px;
-        }
         @media (min-width: 992px) {
-            font-size: 60px;
+            font-size: 50px;
         }
     }
     

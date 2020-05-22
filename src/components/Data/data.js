@@ -37,7 +37,7 @@ export default [
             twitter: 'https://twitter.com/Banguoficial',
             youtube: 'https://www.youtube.com/channel/UCVy9x9KVuKFDnOnkv_bKRMg'
         }],
-        image: 'https://www.bangu-ac.com.br/wp-content/uploads/WhatsApp-Image-2019-11-21-at-14.51.30.jpeg',
+        image: 'https://www.gazetaesportiva.com/wp-content/uploads/imagem/2020/02/12/Bangu-1024x746.png',
         fans: 'https://cdn.espn.com.br/image/wide/622_1c3208a0-c43e-3254-8aa1-90f0b2591b32.jpg'
     },
     {
@@ -78,7 +78,7 @@ export default [
             instagram: 'http://instagram.com/botafogo',
             twitter: 'http://twitter.com/botafogo'
         }],
-        image: 'https://conteudo.imguol.com.br/c/esporte/07/2020/01/31/botafogo-anuncia-contratacao-do-japones-keisuke-honda-1580512481155_v2_1080x1055.jpg',
+        image: 'https://lh3.googleusercontent.com/proxy/ZqsP0Bg3jqCluvqRoebGYQaWm38997lw3sCmHvCNq2zlgLFKq0EoqNdqv2RrJjQ7xH11-zUltK9X7mD-5aFV06lD_96SVd5fVMfPmfF2INEW4YKAqWnRuP5r',
         fans: 'https://img.vavel.com/o-matic-7400209461.jpg'
     },
     {
@@ -119,7 +119,7 @@ export default [
             instagram: 'insta',
             youtube: 'youtbe'
         }],
-        image: 'https://colunadofla.com/wp-content/uploads/2016/08/flamengo-uniforme.png',
+        image: 'https://odia.ig.com.br/_midias/jpg/2020/03/07/dani9206-16115081.jpg',
         fans: 'https://i2.wp.com/mundorubronegro.com/wp-content/uploads/2018/07/torcida-flamengo-maracana-1-e1532100164142.jpg'
     },
     {
@@ -162,7 +162,7 @@ export default [
             youtube: 'https://www.youtube.com/fluminensefc',
             twitter: 'https://twitter.com/fluminensefc'
         }],
-        image: 'https://www.tupi.fm/wp-content/uploads/camisa-flu-1.jpg',
+        image: 'https://unity-img.tbxapis.com/v0/images/07fbc223325610b5a5ebdab08c34ff45/content/5e4c8f1b9e282010f88d9bd7/06c338aca93f471903509067bcd30224/img.jpg',
         fans: 'https://conteudo.imguol.com.br/c/esporte/45/2019/08/27/torcida-do-fluminense-abracou-a-equipe-na-copa-sul-americana-1566955127049_v2_1920x1080.jpg'
     },
     {
@@ -203,7 +203,8 @@ export default [
             instagram: 'insta',
             youtube: 'youtbe'
         }],
-        image: 'https://www.lance.com.br/files/article_main/uploads/2019/08/20/5d5c53a72fe3f.jpeg',
+        image: 'https://conteudo.cbf.com.br/cdn/thumbs/910x0/202002/20200205013705_455.jpeg',
+        // image: 'https://www.lance.com.br/files/article_main/uploads/2019/08/20/5d5c53a72fe3f.jpeg',
         fans: 'https://bolavip.com/__export/1588001559302/sites/bolavip/img/2020/04/27/vasco_torcida_crop1588001558844.jpg_554688468.jpg'
     }
 ]

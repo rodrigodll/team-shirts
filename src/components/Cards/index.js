@@ -17,8 +17,7 @@ export default ({ data, filterText, selectTeam }) => {
     return(
       <div className="card" key={item.id}>
         <h2 className="card__name">{item.name}</h2>
-        <button className="card__trigger" onClick={() => selectTeam(item.id)}>
-        {/* <button className="card__trigger"> */}
+        <button className="card__trigger" onClick={() => selectTeam(item.id, true, item.colors[0].primary, item.colors[0].secondary)}>
           <i className="fas fa-arrow-right"></i>
         </button>
         <p className="card__material">{item.material[0].name}</p>

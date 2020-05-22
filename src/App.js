@@ -14,7 +14,10 @@ class App extends Component {
     super(props)
     this.state = {
       filterText: '',
-      teamSelected: ''
+      teamSelected: '',
+      showDetails: false,
+      colorPri: '',
+      colorSec: ''
     }
   }
 
@@ -24,11 +27,19 @@ class App extends Component {
     })
   }
 
-  selectTeam(id) {
+  selectTeam(id, boolean, colorPri, colorSec) {
+    if(id !== '') {
+      this.setState({
+        teamSelected: [id - 1],
+        colorPri: colorPri,
+        colorSec: colorSec
+      })
+    }
+
     this.setState({
-      teamSelected: [id - 1]
+      showDetails: boolean
     })
-    // console.log('selectTeam ',id)
+
   }
 
   render() {
@@ -52,9 +63,14 @@ class App extends Component {
             />
 
             <Details 
-              selectTeam={this.selectTeam.bind(this)}
-              teamSelected={this.state.teamSelected}
               data={this.props.data}
+              teamSelected={this.state.teamSelected}
+              color={[
+                this.state.colorPri,
+                this.state.colorSec
+              ]}
+              showDetails={this.state.showDetails}
+              selectTeam={this.selectTeam.bind(this)}
             />
           </div>
     

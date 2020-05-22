@@ -1,9 +1,8 @@
 import React from 'react'
 import './Details.scss';
 
-export default({data, teamSelected, selectTeam}) => {
-    
-    // var renderDetails
+export default({data, teamSelected, selectTeam, showDetails, color}) => {
+
     if(teamSelected !== '') {
         // informações
         var renderInfos = teamSelected.map((id) => {
@@ -134,17 +133,27 @@ export default({data, teamSelected, selectTeam}) => {
             )
         })
     }
-
-    const random = data[Math.floor(Math.random() * data.length)];
+    console.log('color', color)
 
     return (
-        <div className="appTest">
-            <div className="details">
+        <div className={showDetails ? 'appTest show' : 'appTest'}>
+            {/* {renderEffect} */}
+            <div className="details__effects">
+                <div 
+                    className={`effect__polygon effect__polygon--one ${showDetails ? 'show' : ''}`}
+                    style={{background: `${color[1] === '#fff' ? color[0] : color[1]}`}}
+                />
+                <div
+                    className={`effect__polygon effect__polygon--two ${showDetails ? 'show' : ''}`}
+                />
+            </div>
+
+            <div className={showDetails ? 'details show' : 'details'}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5">
                             <div className="details__brands">
-                                <button id="limpar" onClick={() => selectTeam([random.id])}>
+                                <button className="details__close" onClick={() => selectTeam('', false, 'white', 'white')}>
                                     <i className="fas fa-arrow-left"></i>
                                 </button>
                                 {/* {renderLogos} */}
