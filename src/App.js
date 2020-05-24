@@ -41,18 +41,22 @@ class App extends Component {
     })
   }
 
+  
   render() {
+    console.log(this.state.teamSelected)
 
     return (
       <div className="App">
-        <div className="container">
-          <header className="App-header">
+        <header className="App-header">
+          <div className="container">
             <Header state={this}/>
             <Search
               filterText={this.state.filterText}
               filterUpdate={this.filterUpdate.bind(this)}
             />
-          </header>
+          </div>
+        </header>
+        <div className="container">
     
           <div className="content">
             <Cards 
@@ -73,8 +77,8 @@ class App extends Component {
             />
           </div>
     
-          <Footer />
         </div>
+        <Footer />
       </div>
     );
   }
