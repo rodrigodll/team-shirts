@@ -21,7 +21,8 @@ export default ({ data, filterText, selectTeam }) => {
           <i className="fas fa-arrow-right"></i>
         </button>
         <p className="card__material">{item.material[0].name}</p>
-        <img className="card__material-logo" src={item.material[0].logo} alt={item.material[0].name} />
+        <img className="card__logo" src={item.logo} alt={item.name} />
+        {/* <img className="card__material-logo" src={item.material[0].logo} alt={item.material[0].name} /> */}
         <div className="card__pic" style={{backgroundImage: "url("+item.image+")"}}></div>
         <div className="card__social">
             {item.social[0].facebook ?

@@ -38,6 +38,16 @@ $shdow-gray: #d3d3d5;
         }
     }
     
+    &__logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        padding: 15px 20px;
+        z-index: 1;
+        filter: drop-shadow(0px 0px 2px #000);
+    }
+    
     &__trigger {
         z-index: 100;
         position: absolute;
@@ -46,8 +56,6 @@ $shdow-gray: #d3d3d5;
         background: transparent;
         transition: all 0.2s ease;
         color: #fff;
-
-
         width: 100%;
         right: 0;
         bottom: 0;
@@ -60,7 +68,6 @@ $shdow-gray: #d3d3d5;
         @media (min-width: 992px) {
             transform: scale(0.1);
             opacity: 0;
-            right: 15px;
             bottom: 20px;
             height: auto;
         }
@@ -160,7 +167,7 @@ $shdow-gray: #d3d3d5;
     
     &__button {
         position: absolute;
-        right: 14px;
+        right: 24px;
         bottom: 14px;
         width: 30px;
         height: 30px;
