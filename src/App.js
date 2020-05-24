@@ -30,7 +30,7 @@ class App extends Component {
   selectTeam(id, boolean, colorPri, colorSec) {
     if(id !== '') {
       this.setState({
-        teamSelected: [id - 1],
+        teamSelected: id,
         colorPri: colorPri,
         colorSec: colorSec
       })
@@ -39,7 +39,6 @@ class App extends Component {
     this.setState({
       showDetails: boolean
     })
-
   }
 
   render() {
