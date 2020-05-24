@@ -1,3 +1,16 @@
+// material
+import adidas from "../../svg/material/adidas.svg";
+import umbro from "../../svg/material/umbro.svg";
+import diadora from "../../svg/material/diadora.svg";
+import kappa from "../../svg/material/kappa.svg";
+
+// Time
+import bangu from "../../svg/team/bangu-rj.svg";
+import botafogo from "../../svg/team/botafogo-rj.svg";
+import flamengo from "../../svg/team/flamengo-rj.svg";
+import fluminense from "../../svg/team/fluminense-rj.svg";
+import vasco from "../../svg/team/vasco-da-gama-rj.svg";
+
 export default [
     {
         id: 252352,
@@ -14,7 +27,7 @@ export default [
             primary: 'red',
             secondary: '#fff'
         }],
-        logo: 'logo',
+        logo: bangu,
         shirt: [{
             home: [{
                 name: 'Alve Rubra',
@@ -47,7 +60,7 @@ export default [
         abb: 'Bot',
         material: [{
             name: 'Kappa',
-            logo: 'https://www.botafogo.com.br/images/partners/kappa_logo2019.png',
+            logo: kappa,
             site: '/'
         }],
         site: 'https://www.botafogo.com.br/',
@@ -55,7 +68,7 @@ export default [
             primary: '#000',
             secondary: '#fff'
         }],
-        logo: 'logo',
+        logo: botafogo,
         shirt: [{
             home: [{
                 name: 'Tradicional',
@@ -88,7 +101,7 @@ export default [
         abb: 'Fla',
         material: [{
             name: 'Adidas',
-            logo: 'https://logospng.org/download/adidas/logo-adidas-256.png',
+            logo: adidas,
             site: 'https://www.adidas.com.br/flamengo'
         }],
         site: 'https://www.flamengo.com.br',
@@ -96,7 +109,7 @@ export default [
             primary: 'red',
             secondary: '#000'
         }],
-        logo: 'logo',
+        logo: flamengo,
         shirt: [{
             home: [{
                 name: 'Rubro negra',
@@ -129,7 +142,7 @@ export default [
         abb: 'Flu',
         material: [{
             name: 'Umbro',
-            logo: 'https://i.pinimg.com/originals/5f/04/0e/5f040e809b7ab60c71f5ea24d0b5687c.png',
+            logo: umbro,
             site: 'https://www.umbro.com.br/fluminense'
         }],
         site: 'https://www.fluminense.com.br',
@@ -138,7 +151,7 @@ export default [
             secondary: '#15633d',
             third: '#fff'
         }],
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Fluminense_FC_escudo.png',
+        logo: fluminense,
         shirt: [{
             home: [{
                 name: 'Tricolor 2020',
@@ -172,7 +185,7 @@ export default [
         abb: 'Vas',
         material: [{
             name: 'Diadora',
-            logo: 'https://tribes-store.it/media/aw_shopbybrand/image/d/i/diadora.png',
+            logo: diadora,
             site: '/'
         }],
         site: 'https://www.vasco.com.br',
@@ -180,7 +193,7 @@ export default [
             primary: '#000',
             secondary: '#fff'
         }],
-        logo: 'logo',
+        logo: vasco,
         shirt: [{
             home: [{
                 name: 'Tradicional',
