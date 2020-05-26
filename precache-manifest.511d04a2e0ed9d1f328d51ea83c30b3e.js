@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3f03df4d850244bb7ea6a77eb80a39c",
+    "revision": "11d1caef000ec7b3c9ddc2ec9183f43b",
     "url": "/team-shirts/index.html"
   },
   {
-    "revision": "053587bbbf6a8b72ae16",
-    "url": "/team-shirts/static/css/main.00616a9d.chunk.css"
+    "revision": "149f1be568d4215c0ae2",
+    "url": "/team-shirts/static/css/main.fa9eb798.chunk.css"
   },
   {
-    "revision": "98fe466b78d864bc4226",
-    "url": "/team-shirts/static/js/2.07f70e00.chunk.js"
+    "revision": "424817b7a18ce262481d",
+    "url": "/team-shirts/static/js/2.5c2e1453.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/team-shirts/static/js/2.07f70e00.chunk.js.LICENSE.txt"
+    "url": "/team-shirts/static/js/2.5c2e1453.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "053587bbbf6a8b72ae16",
-    "url": "/team-shirts/static/js/main.0671d3b2.chunk.js"
+    "revision": "149f1be568d4215c0ae2",
+    "url": "/team-shirts/static/js/main.cbfc0293.chunk.js"
   },
   {
     "revision": "3547da2bf1f8a173343e",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c36ed9b10ee4ffa7e122aba1e00c1e59",
     "url": "/team-shirts/static/media/bangu-rj.c36ed9b1.svg"
+  },
+  {
+    "revision": "2c20eca0496b88fb3829d8f53ee5297a",
+    "url": "/team-shirts/static/media/bg4.2c20eca0.jpg"
   },
   {
     "revision": "c890ca094840fdffbf77fe8a0c386fbb",
@@ -52,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/team-shirts/static/media/kappa.ce9196ec.svg"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/team-shirts/static/media/logo.5d5d9eef.svg"
+    "revision": "efdddf8ed9b31996feab6b5b988ba1ae",
+    "url": "/team-shirts/static/media/logo.efdddf8e.png"
   },
   {
     "revision": "a551ddcaae374d9678447d5f757fa52b",
