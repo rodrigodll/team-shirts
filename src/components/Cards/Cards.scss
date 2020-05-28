@@ -10,13 +10,14 @@ $shdow-gray: #d3d3d5;
 .card {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--card);
     overflow: hidden;
     margin: 10px 10px 10px;
     height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
     
     &__name {
-        z-index: 99;
+        z-index: 1;
         font-family: "Poppins", sans-serif;
         position: absolute;
         bottom: 0;
@@ -49,7 +50,6 @@ $shdow-gray: #d3d3d5;
     }
     
     &__trigger {
-        z-index: 100;
         position: absolute;
         cursor: pointer;
         border: 0;
@@ -62,7 +62,7 @@ $shdow-gray: #d3d3d5;
         height: 100%;
         text-align: right;
         padding-right: 25px;
-        z-index: 99;
+        z-index: 2;
         transform: scale(1);
         opacity: 1;
         @media (min-width: 992px) {
@@ -84,7 +84,7 @@ $shdow-gray: #d3d3d5;
         }
     }
     &__material {
-        z-index: 99;
+        z-index: 1;
         position: absolute;
         top: 20px;
         right: 70px;
@@ -177,7 +177,6 @@ $shdow-gray: #d3d3d5;
         cursor: pointer;
         outline:none;
         transition: all 0.3s ease;
-        mix-blend-mode: multiply;
         
         i {
             font-size: 3rem;
@@ -188,6 +187,7 @@ $shdow-gray: #d3d3d5;
         &:hover {
             .card__button {
                 transform: scale(13);
+                mix-blend-mode: multiply;
                 
                 @media (min-width: 600px) {
                     transform: scale(16.5);
@@ -218,6 +218,6 @@ $shdow-gray: #d3d3d5;
     }
 
     @media (min-width: 992px) {
-        width: calc(50% - 30px);
+        width: calc(50% - 20px);
     }
 }

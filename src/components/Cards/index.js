@@ -28,35 +28,35 @@ export default ({ data, filterText, selectTeam }) => {
         <button className="card__trigger" onClick={() => {updateTeam(item)}}>
           <i className="fas fa-arrow-right"></i>
         </button>
-        <p className="card__material">{item.material[0].name}</p>
+        <p className="card__material">{item.material.name}</p>
         <img className="card__logo" src={item.logo} alt={item.name} />
-        {/* <img className="card__material-logo" src={item.material[0].logo} alt={item.material[0].name} /> */}
+        {/* <img className="card__material-logo" src={item.material.logo} alt={item.material.name} /> */}
         <div className="card__pic" style={{backgroundImage: "url("+item.image+")"}}></div>
         <div className="card__social">
-            {item.social[0].facebook ?
-              <a href={item.social[0].facebook} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
+            {item.social.facebook ?
+              <a href={item.social.facebook} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
                 <i className="fab fa-facebook-f">
                 </i></a>: ''}
-            {item.social[0].instagram ?
-              <a href={item.social[0].instagram} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
+            {item.social.instagram ?
+              <a href={item.social.instagram} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
                 <i className="fab fa-instagram"></i>
               </a>: ''}
-            {item.social[0].twitter ?
-              <a href={item.social[0].twitter} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
+            {item.social.twitter ?
+              <a href={item.social.twitter} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
                 <i className="fab fa-twitter"></i>
               </a>: ''}
-            {item.social[0].youtube ?
-              <a href={item.social[0].youtube} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
+            {item.social.youtube ?
+              <a href={item.social.youtube} target="_blank" rel="noopener noreferrer" style={{backgroundColor: item.color}}>
                 <i className="fab fa-youtube"></i>
               </a>: ''}
         </div>
         <button
           className="card__button" 
           style={
-            (item.colors[0].primary === "#000") ? {
+            (item.colors.primary === "#000") ? {
               opacity: "0.8",
-              backgroundColor: item.colors[0].primary
-            } : { backgroundColor: item.colors[0].primary }
+              backgroundColor: item.colors.primary
+            } : { backgroundColor: item.colors.primary }
             }
           >
         </button>
