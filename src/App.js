@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cards from "./components/Cards"
-import Search from "./components/Search";
 import Details from "./components/Details";
 
 import './App.css';

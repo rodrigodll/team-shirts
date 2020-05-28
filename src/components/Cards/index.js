@@ -10,7 +10,9 @@ export default ({ data, filterText, selectTeam }) => {
   .filter(item => {
     // filtro na página com base no valor da busca
     // item.name: Fluminense | filterText: Fluminense 
-    return item.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
+    return  item.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0 || 
+            item.material.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0 ||
+            item.location.city.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
   })
   .map(item => {
     // Renderiza os cards na tela
