@@ -56,8 +56,19 @@ class App extends Component {
             />
           </div>
         </header>
-        <div className="container">
-    
+
+        <div className="banner-tv">
+          <div className="container">
+            <div className="banner-tv__anime">
+              <div className="elem elem__2">Camisas</div>
+              <div className="elem elem__1">
+                <img src={process.env.PUBLIC_URL + '/soccer-player-blue.png'} alt="" width="250"/>
+              </div>
+              <div className="elem elem__3">De Time</div>
+            </div>
+          </div>
+        </div>
+
           <div className="content">
             <Cards 
               data={this.props.data} 
