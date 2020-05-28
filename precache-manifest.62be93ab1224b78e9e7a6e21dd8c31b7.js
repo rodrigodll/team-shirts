@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fa4da3963013704cbce52d8bea09625",
+    "revision": "a666b9d254c65b873babe14b9af18542",
     "url": "/team-shirts/index.html"
   },
   {
-    "revision": "169e22c93d83c89250ab",
-    "url": "/team-shirts/static/css/main.40621ede.chunk.css"
+    "revision": "c98a08312bf2e85dd50f",
+    "url": "/team-shirts/static/css/main.3950a5d6.chunk.css"
   },
   {
-    "revision": "ce4f6ce393b8313723b8",
-    "url": "/team-shirts/static/js/2.768b5a40.chunk.js"
+    "revision": "44161b22c1d0d726fbd3",
+    "url": "/team-shirts/static/js/2.49e4c9d8.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/team-shirts/static/js/2.768b5a40.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/team-shirts/static/js/2.49e4c9d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "169e22c93d83c89250ab",
-    "url": "/team-shirts/static/js/main.663dd6ac.chunk.js"
+    "revision": "c98a08312bf2e85dd50f",
+    "url": "/team-shirts/static/js/main.f96077cb.chunk.js"
   },
   {
     "revision": "3547da2bf1f8a173343e",
@@ -40,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/team-shirts/static/media/botafogo-rj.c890ca09.svg"
   },
   {
+    "revision": "1da252124f676f8b6b94a71896b71204",
+    "url": "/team-shirts/static/media/cross.1da25212.svg"
+  },
+  {
     "revision": "7e22e4e08d1fcc9c163027da4e696706",
     "url": "/team-shirts/static/media/diadora.7e22e4e0.svg"
   },
@@ -56,16 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/team-shirts/static/media/kappa.ce9196ec.svg"
   },
   {
+    "revision": "a56740016301cf29873c6be9e2070523",
+    "url": "/team-shirts/static/media/logo.a5674001.png"
+  },
+  {
     "revision": "a551ddcaae374d9678447d5f757fa52b",
     "url": "/team-shirts/static/media/palmeiras-sp.a551ddca.svg"
   },
   {
     "revision": "6fd3bcd6d8bbac385defcad892ac4805",
     "url": "/team-shirts/static/media/puma.6fd3bcd6.svg"
-  },
-  {
-    "revision": "a56740016301cf29873c6be9e2070523",
-    "url": "/team-shirts/static/media/teste-logo.a5674001.png"
   },
   {
     "revision": "12520c3effca90808e1521303f538e5b",

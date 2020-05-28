@@ -1,35 +1,36 @@
 {
   "files": {
-    "main.css": "/team-shirts/static/css/main.40621ede.chunk.css",
-    "main.js": "/team-shirts/static/js/main.663dd6ac.chunk.js",
-    "main.js.map": "/team-shirts/static/js/main.663dd6ac.chunk.js.map",
+    "main.css": "/team-shirts/static/css/main.3950a5d6.chunk.css",
+    "main.js": "/team-shirts/static/js/main.f96077cb.chunk.js",
+    "main.js.map": "/team-shirts/static/js/main.f96077cb.chunk.js.map",
     "runtime-main.js": "/team-shirts/static/js/runtime-main.d94da8fe.js",
     "runtime-main.js.map": "/team-shirts/static/js/runtime-main.d94da8fe.js.map",
-    "static/js/2.768b5a40.chunk.js": "/team-shirts/static/js/2.768b5a40.chunk.js",
-    "static/js/2.768b5a40.chunk.js.map": "/team-shirts/static/js/2.768b5a40.chunk.js.map",
+    "static/js/2.49e4c9d8.chunk.js": "/team-shirts/static/js/2.49e4c9d8.chunk.js",
+    "static/js/2.49e4c9d8.chunk.js.map": "/team-shirts/static/js/2.49e4c9d8.chunk.js.map",
     "index.html": "/team-shirts/index.html",
-    "precache-manifest.60972fba299e6f6d5387352ee62a9754.js": "/team-shirts/precache-manifest.60972fba299e6f6d5387352ee62a9754.js",
+    "precache-manifest.62be93ab1224b78e9e7a6e21dd8c31b7.js": "/team-shirts/precache-manifest.62be93ab1224b78e9e7a6e21dd8c31b7.js",
     "service-worker.js": "/team-shirts/service-worker.js",
-    "static/css/main.40621ede.chunk.css.map": "/team-shirts/static/css/main.40621ede.chunk.css.map",
-    "static/js/2.768b5a40.chunk.js.LICENSE.txt": "/team-shirts/static/js/2.768b5a40.chunk.js.LICENSE.txt",
+    "static/css/main.3950a5d6.chunk.css.map": "/team-shirts/static/css/main.3950a5d6.chunk.css.map",
+    "static/js/2.49e4c9d8.chunk.js.LICENSE.txt": "/team-shirts/static/js/2.49e4c9d8.chunk.js.LICENSE.txt",
     "static/media/adidas.svg": "/team-shirts/static/media/adidas.b52517f7.svg",
     "static/media/bangu-rj.svg": "/team-shirts/static/media/bangu-rj.c36ed9b1.svg",
     "static/media/App.scss": "/team-shirts/static/media/bg4.70899724.jpg",
     "static/media/botafogo-rj.svg": "/team-shirts/static/media/botafogo-rj.c890ca09.svg",
+    "static/media/Details.scss": "/team-shirts/static/media/cross.1da25212.svg",
     "static/media/diadora.svg": "/team-shirts/static/media/diadora.7e22e4e0.svg",
     "static/media/flamengo-rj.svg": "/team-shirts/static/media/flamengo-rj.50496595.svg",
     "static/media/fluminense-rj.svg": "/team-shirts/static/media/fluminense-rj.88d39df6.svg",
     "static/media/kappa.svg": "/team-shirts/static/media/kappa.ce9196ec.svg",
+    "static/media/logo.png": "/team-shirts/static/media/logo.a5674001.png",
     "static/media/palmeiras-sp.svg": "/team-shirts/static/media/palmeiras-sp.a551ddca.svg",
     "static/media/puma.svg": "/team-shirts/static/media/puma.6fd3bcd6.svg",
-    "static/media/teste-logo.png": "/team-shirts/static/media/teste-logo.a5674001.png",
     "static/media/umbro.svg": "/team-shirts/static/media/umbro.12520c3e.svg",
     "static/media/vasco-da-gama-rj.svg": "/team-shirts/static/media/vasco-da-gama-rj.f7b4e556.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d94da8fe.js",
-    "static/js/2.768b5a40.chunk.js",
-    "static/css/main.40621ede.chunk.css",
-    "static/js/main.663dd6ac.chunk.js"
+    "static/js/2.49e4c9d8.chunk.js",
+    "static/css/main.3950a5d6.chunk.css",
+    "static/js/main.f96077cb.chunk.js"
   ]
 }
