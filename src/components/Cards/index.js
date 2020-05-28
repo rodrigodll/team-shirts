@@ -6,6 +6,12 @@ import './Cards.scss';
 // filterText: Parâmetro criado em App.js para uso em Search.js
 export default ({ data, filterText, selectTeam }) => {
 
+  const updateTeam = (item) => {
+    const findId = data.filter(result => result.id === item.id )
+    
+    selectTeam(findId[0], true, item.colors.primary, item.colors.secondary)
+  }
+
   const renderCard = data
   .filter(item => {
     // filtro na página com base no valor da busca
@@ -19,7 +25,7 @@ export default ({ data, filterText, selectTeam }) => {
     return(
       <div className="card" key={item.id}>
         <h2 className="card__name">{item.name}</h2>
-        <button className="card__trigger" onClick={() => selectTeam(item.id, true, item.colors[0].primary, item.colors[0].secondary)}>
+        <button className="card__trigger" onClick={() => {updateTeam(item)}}>
           <i className="fas fa-arrow-right"></i>
         </button>
         <p className="card__material">{item.material[0].name}</p>

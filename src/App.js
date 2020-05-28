@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Cards from "./components/Cards"
 import Details from "./components/Details";
 
-import './App.css';
+import './style/App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +16,8 @@ class App extends Component {
       teamSelected: '',
       showDetails: false,
       colorPri: '',
-      colorSec: ''
+      colorSec: '',
+      theme: 'Dark'
     }
   }
 
@@ -42,16 +43,17 @@ class App extends Component {
 
   
   render() {
-    console.log(this.state.teamSelected)
+    console.log('this.state.teamSelected',this.state.teamSelected)
 
     return (
       <div className="App">
         <header className="App-header">
           <div className="container">
-            <Header state={this}/>
-            <Search
+            <Header
+              state={this}
               filterText={this.state.filterText}
               filterUpdate={this.filterUpdate.bind(this)}
+              ChangeTheme={this.state.theme}
             />
           </div>
         </header>
@@ -68,7 +70,17 @@ class App extends Component {
           </div>
         </div>
 
+        <div className="container">
+    
           <div className="content">
+            <p>{this.state.filterText}</p>
+            <p>Busca por estados
+              <button className="filter__button" onClick={(e) => this.setState({filterText: ''}) }>Todos os estados</button>
+              <button className="filter__button" onClick={(e) => this.setState({filterText: 'Rio de Janeiro'}) }>Rio de Janeiro</button>
+              <button className="filter__button" onClick={(e) => this.setState({filterText: 'São Paulo'}) }>São Paulo</button>
+              <button className="filter__button" onClick={(e) => this.setState({filterText: 'Minas Gerais'}) }>Minas Gerais</button>
+              <button className="filter__button" onClick={(e) => this.setState({filterText: 'Rio Grande do Sul'}) }>Rio Grande do Sul</button>
+            </p>
             <Cards 
               data={this.props.data} 
               filterText={this.state.filterText}
