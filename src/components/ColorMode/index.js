@@ -53,7 +53,6 @@ export default () => {
     
     
     const changeColors = (colors) => {
-        console.log(colors)
         Object.keys(colors).map(key => 
             html.style.setProperty(transformKey(key), colors[key]) 
         )

@@ -6,7 +6,6 @@ import './Cards.scss';
 // data: arquivo base de informações
 // filterText: Parâmetro criado em App.js para uso em Search.js
 export default ({ data, filterText}) => {
-  console.log(data, filterText)
   const renderCard = data
   .filter(item => {
     // filtro na página com base no valor da busca
