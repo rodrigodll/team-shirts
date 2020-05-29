@@ -20,7 +20,6 @@ export default () => {
     }, [])
 
 
-
     const html = document.querySelector("html")
     
     const getStyle = (element, style) => 
@@ -35,7 +34,8 @@ export default () => {
         bgDetails: getStyle(html, "--bg-Details"),
         shadowLogo: getStyle(html, "--bg-Details"),
         color: getStyle(html, "--color"),
-        card: getStyle(html, "--card")
+        card: getStyle(html, "--card"),
+        cardMixblend: getStyle(html, "--card-mixBlend")
     }
     
     const lightMode = {
@@ -44,7 +44,8 @@ export default () => {
         bgDetails: "#ffffff",
         shadowLogo: "#f1d3b8",
         color: "#1b1b1b",
-        card: "#f9f9f9"
+        card: "#f9f9f9",
+        cardMixblend: "initial"
     }
     
     const transformKey = key => 
@@ -59,7 +60,6 @@ export default () => {
     }
     
     const switchTheme = () =>{
-        console.log('>>>>>', themeLight)
         if(themeLight) {
             localStorage.setItem('theme-color', 'theme-light')
             changeTheme(false)
@@ -67,7 +67,6 @@ export default () => {
             // document.body.classList.add('theme--light');
         } else {
             localStorage.setItem('theme-color', 'theme-dark')
-            // changeColors(initialColors)
             html.removeAttribute('style')
             changeTheme(true)
         }

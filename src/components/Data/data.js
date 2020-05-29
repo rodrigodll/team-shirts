@@ -108,7 +108,7 @@ export default [
             instagram: 'http://instagram.com/botafogo',
             twitter: 'http://twitter.com/botafogo'
         },
-        image: 'https://lh3.googleusercontent.com/proxy/ZqsP0Bg3jqCluvqRoebGYQaWm38997lw3sCmHvCNq2zlgLFKq0EoqNdqv2RrJjQ7xH11-zUltK9X7mD-5aFV06lD_96SVd5fVMfPmfF2INEW4YKAqWnRuP5r',
+        image: 'https://www.atribunamt.com.br/wp-content/uploads/2020/01/Botafogo-e-Rezende-30-01-20.jpg',
         fans: 'https://img.vavel.com/o-matic-7400209461.jpg',
         location: {
             country: 'Brazil',

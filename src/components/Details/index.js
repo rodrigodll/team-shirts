@@ -1,31 +1,20 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Details.scss';
 
-export default({data, teamSelected, selectTeam, showDetails, color}) => {
+export default({data, selectTeam}) => {
 
-    document.onkeydown = function(evt) {
-        evt = evt || window.event;
-        if (evt.keyCode === 27) {
-            selectTeam('', false, 'white', 'white')
-        }
-    };
+    const nameTeam = window.location.pathname.toLowerCase().split('/')[1].replace(/-/g, ' ')
+    const filterTeam = data.filter(item => item.name.toLowerCase() === nameTeam)
     
-    if(teamSelected === '') {
-        return(
-            <div>
-                <div className="details__effects">
-                    <div className="effect__polygon effect__polygon--one "></div>
-                    <div className="effect__polygon effect__polygon--two "></div>
-                </div>
-                <div className="details "></div>
-            </div>
+    if (filterTeam.length === 0) {
+        return (
+            <h1>Nenhum time encontrado</h1>
         )
     }
+    
 
-    // const findId = data.filter(item => item.id === teamSelected )
-
-    // camisas
-    var renderShirts = teamSelected.shirt.map((item, index) => {
+    const renderShirts = filterTeam[0].shirt.map((item, index) => {
         return (
             <div className={`shirts-list__box ${index === 0 ? 'active' : ''}`} key={index}>
                 <div className="shirts-list__image">
@@ -38,7 +27,7 @@ export default({data, teamSelected, selectTeam, showDetails, color}) => {
         )
     })
 
-    var renderShirts2 = teamSelected.shirt.filter(item => item.model === 'home').map((item, index) => {
+    const renderShirts2 = filterTeam[0].shirt.filter(item => item.model === 'home').map((item, index) => {
         return(
             <img 
                 key={index}
@@ -49,40 +38,51 @@ export default({data, teamSelected, selectTeam, showDetails, color}) => {
         )
     })
 
+    setTimeout(() => {
+        // alert()
+        document.querySelector('.effect__polygon--one').classList.add('show');
+        document.querySelector('.effect__polygon--two').classList.add('show');
+        document.querySelector('.details').classList.add('show');
+    }, 400);
+    
+    function close() {
+        document.querySelector('.effect__polygon--one').classList.remove('show');
+        document.querySelector('.effect__polygon--two').classList.remove('show');
+        document.querySelector('.details').classList.remove('show');
+    }
 
     return (
         <>
-            {/* {renderEffect} */}
-            <div className="details__effects" onClick={() => selectTeam('', false, 'white', 'white')}>
+            <Link className="details__effects" to={{ pathname:'/team-shirts', state: filterTeam[0].id}}>
                 <div 
-                    className={`effect__polygon effect__polygon--one ${showDetails ? 'show' : ''}`}
-                    style={{background: `${color[1] === '#fff' ? color[0] : color[1]}`}}
+                    className={`effect__polygon effect__polygon--one `}
+                    style={{
+                        background: `${filterTeam[0].colors.secondary === '#fff' ? filterTeam[0].colors.primary : filterTeam[0].colors.secondary}`}}
                 />
                 <div
-                    className={`effect__polygon effect__polygon--two ${showDetails ? 'show' : ''}`}
+                    className={`effect__polygon effect__polygon--two `}
                 />
-            </div>
+            </Link>
 
-            <div className={showDetails ? 'details show' : 'details'}>
+            <div className='details '>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5">
                             <div className="details__brands">
-                                <button className="details__close" onClick={() => selectTeam('', false, 'white', 'white')}>
+                                <Link to={{ pathname:'/team-shirts', state: filterTeam[0].id}} className="details__close">
                                     <i className="fas fa-arrow-left"></i>
-                                </button>
-                                {/* {renderLogos} */}
+                                </Link>
                                 <div
                                     className="principal-shirt" 
                                     style=
                                         {{backgroundColor: 
-                                        teamSelected.colors.secondary === "#fff" || teamSelected.colors.secondary === "#000" ? 
-                                            teamSelected.colors.primary: teamSelected.colors.secondary,
+                                        filterTeam[0].colors.secondary === "#fff" || filterTeam[0].colors.secondary === "#000" ? 
+                                            filterTeam[0].colors.primary: filterTeam[0].colors.secondary,
                                         }}>
                                         {renderShirts2}
                                     <div 
-                                        className={teamSelected.colors.primary === '#000' ? 'principal-shirt__background opacity' : 'principal-shirt__background' } 
-                                        style={{ backgroundImage: "url("+teamSelected.fans+")" }}
+                                        className={filterTeam[0].colors.primary === '#000' ? 'principal-shirt__background opacity' : 'principal-shirt__background' } 
+                                        style={{ backgroundImage: "url("+filterTeam[0].fans+")" }}
                                     />
                                 </div>
                             </div>
@@ -91,12 +91,12 @@ export default({data, teamSelected, selectTeam, showDetails, color}) => {
                         <div className="col-lg-5">
                             <div className="details__infos">
                                 <h4 className="shirt-info__material">
-                                    {teamSelected.material.name}
+                                    {filterTeam[0].material.name}
                                 </h4>
                                 <div className="d-flex">
-                                    <img src={teamSelected.logo} width="40" alt={teamSelected.logo} />
+                                    <img src={filterTeam[0].logo} width="40" alt={filterTeam[0].logo} />
                                     <h1 className="shirt-info__name">
-                                        {teamSelected.fullName}
+                                        {filterTeam[0].fullName}
                                     </h1>
                                 </div>
                                 <p className="shirt-info__description">
@@ -106,17 +106,17 @@ export default({data, teamSelected, selectTeam, showDetails, color}) => {
                             
                             <div className="details__calltoaction">
                                 <a
-                                    href={teamSelected.site}
+                                    href={filterTeam[0].site}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{backgroundColor: teamSelected.colors.secondary === '#fff' ? teamSelected.colors.primary : teamSelected.colors.secondary}}
-                                    className="shirts-caltoaction__button button--default">{teamSelected.name}</a>
+                                    style={{backgroundColor: filterTeam[0].colors.secondary === '#fff' ? filterTeam[0].colors.primary : filterTeam[0].colors.secondary}}
+                                    className="shirts-caltoaction__button button--default">{filterTeam[0].name}</a>
                                 <a
-                                    href={teamSelected.material.site}
+                                    href={filterTeam[0].material.site}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{backgroundColor: teamSelected.colors.secondary === '#fff' ? teamSelected.colors.primary : teamSelected.colors.secondary}}
-                                    className="shirts-caltoaction__button button--default">{teamSelected.material.name}</a>
+                                    style={{backgroundColor: filterTeam[0].colors.secondary === '#fff' ? filterTeam[0].colors.primary : filterTeam[0].colors.secondary}}
+                                    className="shirts-caltoaction__button button--default">{filterTeam[0].material.name}</a>
                             </div>
 
                             <div className="details__shirts">
