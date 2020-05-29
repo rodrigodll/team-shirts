@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddd818b6c0e195404926fe4ace62e396",
+    "revision": "d3d79215f3a3954a65ebbdb41dc29e5f",
     "url": "/team-shirts/index.html"
   },
   {
-    "revision": "77f39aa4b99a3b1e88a6",
-    "url": "/team-shirts/static/css/main.3950a5d6.chunk.css"
+    "revision": "7daa19af6fe195b37895",
+    "url": "/team-shirts/static/css/main.bdf4220e.chunk.css"
   },
   {
-    "revision": "44161b22c1d0d726fbd3",
-    "url": "/team-shirts/static/js/2.49e4c9d8.chunk.js"
+    "revision": "88262a1395b54cc41b87",
+    "url": "/team-shirts/static/js/2.3334c88e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/team-shirts/static/js/2.49e4c9d8.chunk.js.LICENSE.txt"
+    "url": "/team-shirts/static/js/2.3334c88e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "77f39aa4b99a3b1e88a6",
-    "url": "/team-shirts/static/js/main.7a100ce4.chunk.js"
+    "revision": "7daa19af6fe195b37895",
+    "url": "/team-shirts/static/js/main.c841d010.chunk.js"
   },
   {
-    "revision": "3547da2bf1f8a173343e",
-    "url": "/team-shirts/static/js/runtime-main.d94da8fe.js"
+    "revision": "a43fa882cafab75b61b3",
+    "url": "/team-shirts/static/js/runtime-main.cd18a4b4.js"
   },
   {
     "revision": "b52517f740dde7063159e3297686ef6c",
