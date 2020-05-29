@@ -28,7 +28,7 @@ export default({data, filterText, filterUpdate, ChangeTheme}) => {
     <div className="header">
       <div className="container">
         <div className="row">
-          <a href="/">
+          <a href="/team-shirts">
             <img src={logo} className="header__logo" width="120" alt=""/>
           </a>
 

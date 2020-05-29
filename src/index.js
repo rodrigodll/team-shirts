@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './style/index.scss';
 import App from './App';
 import data from './components/Data/data';
+import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App data={ data } />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <App data={ data } />
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

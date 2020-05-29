@@ -1,17 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Cards.scss';
 
 // propriedas passadas ao component
 // data: arquivo base de informações
 // filterText: Parâmetro criado em App.js para uso em Search.js
-export default ({ data, filterText, selectTeam }) => {
-
-  const updateTeam = (item) => {
-    const findId = data.filter(result => result.id === item.id )
-    
-    selectTeam(findId[0], true, item.colors.primary, item.colors.secondary)
-  }
-
+export default ({ data, filterText}) => {
+  console.log(data, filterText)
   const renderCard = data
   .filter(item => {
     // filtro na página com base no valor da busca
@@ -25,9 +20,11 @@ export default ({ data, filterText, selectTeam }) => {
     return(
       <div className="card" key={item.id}>
         <h2 className="card__name">{item.name}</h2>
-        <button className="card__trigger" onClick={() => {updateTeam(item)}}>
+        
+        <Link to={`/${item.name.replace(/ /g, '-').toLowerCase()}`} className="card__trigger">
           <i className="fas fa-arrow-right"></i>
-        </button>
+        </Link>
+
         <p className="card__material">{item.material.name}</p>
         <img className="card__logo" src={item.logo} alt={item.name} />
         {/* <img className="card__material-logo" src={item.material.logo} alt={item.material.name} /> */}
